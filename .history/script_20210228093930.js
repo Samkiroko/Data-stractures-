@@ -65,19 +65,7 @@ console.log(guests2);
 
 console.log('---AND----');
 console.log(0 && 'Jonas');
-console.log('Hello' && 23 && null); //null it falsely
-
-if (restaurant.orderPizza) {
-  restaurant.orderPizza('Mush', 'spinach');
-}
-restaurant.orderPizza && restaurant.orderPizza('mush', 'spinach');
-
-restaurant.numGuest = 0;
-const guests3 = restaurant.numGuest || 10;
-console.log(guests3);
-//  Nullish: null and undefined (NOT 0 or '')
-const guestCorrect = restaurant.numGuest ?? 10;
-console.log(guestCorrect);
+console.log('Hello' && 23 && null);
 
 //  destructuring
 // const arr = [1, 2, ...[4, 3]];

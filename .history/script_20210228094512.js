@@ -73,9 +73,9 @@ if (restaurant.orderPizza) {
 restaurant.orderPizza && restaurant.orderPizza('mush', 'spinach');
 
 restaurant.numGuest = 0;
-const guests3 = restaurant.numGuest || 10;
-console.log(guests3);
-//  Nullish: null and undefined (NOT 0 or '')
+const guests2 = restaurant.numGuest || 10;
+console.log(guests2);
+
 const guestCorrect = restaurant.numGuest ?? 10;
 console.log(guestCorrect);
 

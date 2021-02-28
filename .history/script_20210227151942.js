@@ -46,72 +46,18 @@ const restaurant = {
       `Here is your declicious pasts with ${ing1}, ${ing2} and ${ing3}.`
     );
   },
-  orderPizza: function (mainIngredient, ...otherIngredients) {
-    console.log(mainIngredient);
-    console.log(otherIngredients);
-  },
 };
-// use any data type, return any data type short-circuiting
-console.log(3 || 'jonas');
-console.log('' || 'jonas');
-console.log(true || 0);
-console.log(undefined || null);
 
-restaurant.numGuest = 0;
-const guests1 = restaurant.numGuest ? restaurant.numGuest : 10;
-console.log(guests1);
-const guests2 = restaurant.numGuest || 10;
-console.log(guests2);
+const arr = [1, 2, ...[4, 3]];
 
-console.log('---AND----');
-console.log(0 && 'Jonas');
-console.log('Hello' && 23 && null); //null it falsely
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
 
-if (restaurant.orderPizza) {
-  restaurant.orderPizza('Mush', 'spinach');
-}
-restaurant.orderPizza && restaurant.orderPizza('mush', 'spinach');
-
-restaurant.numGuest = 0;
-const guests3 = restaurant.numGuest || 10;
-console.log(guests3);
-//  Nullish: null and undefined (NOT 0 or '')
-const guestCorrect = restaurant.numGuest ?? 10;
-console.log(guestCorrect);
-
-//  destructuring
-// const arr = [1, 2, ...[4, 3]];
-
-// const [a, b, ...others] = [1, 2, 3, 4, 5];
-// console.log(a, b, others);
-
-// const [pizza, risotto, ...otherFood] = [
-//   ...restaurant.mainMenu,
-//   ...restaurant.starterMenu,
-// ];
-// console.log(pizza, risotto, ...otherFood);
-
-// // objects
-
-// const { sat, ...weekdays } = restaurant.openingHours;
-// console.log(weekdays);
-
-// // functions
-// const add = function (...numbers) {
-//   let sum = 0;
-//   for (let i = 0; i < numbers.length; i++) {
-//     sum += numbers[i];
-//   }
-//   console.log(sum);
-// };
-
-// add(5, 6, 7, 8, 8, 9, 6);
-
-// const x = [23, 5, 7];
-// add(...x);
-
-// restaurant.orderPizza('mush', 'onion', 'olives', 'spinach');
-// restaurant.orderPizza('mush');
+const [pizza, risotto, ...otherFood] = [
+  ...restaurant.mainMenu,
+  ...restaurant.starterMenu,
+];
+console.log(pizza, risotto, ...otherFood);
 // const arr = [7, 8, 9];
 // const badNewArr = [1, 2, arr[1], arr[2]];
 // console.log(badNewArr);
