@@ -440,16 +440,3 @@ function roundTo(base, precision) {
   return averageRoundOf;
 }
 console.log(roundTo(average, 4));
-
-// #3
-/*
-Odd of victory Bayern Munich: 1.33
-Odd of draw: 3.25
-Odd of victory Borrussia Dortmund: 6.5
-*/
-
-for (const [team, odd] of Object.entries(game.odds)) {
-  // console.log(team, odd);
-  const teamstr = team === 'x' ? 'draw' : `victory ${game[team]}`;
-  console.log(`Odd of ${teamstr} ${odd}`);
-}

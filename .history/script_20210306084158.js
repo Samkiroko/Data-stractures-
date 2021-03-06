@@ -433,23 +433,3 @@ const odds = Object.values(game.odds);
 let average = 0;
 for (const odd of odds) average += odd;
 average /= odds.length;
-
-function roundTo(base, precision) {
-  let m = Math.pow(10, precision);
-  let averageRoundOf = Math.round(base * m) / m;
-  return averageRoundOf;
-}
-console.log(roundTo(average, 4));
-
-// #3
-/*
-Odd of victory Bayern Munich: 1.33
-Odd of draw: 3.25
-Odd of victory Borrussia Dortmund: 6.5
-*/
-
-for (const [team, odd] of Object.entries(game.odds)) {
-  // console.log(team, odd);
-  const teamstr = team === 'x' ? 'draw' : `victory ${game[team]}`;
-  console.log(`Odd of ${teamstr} ${odd}`);
-}
