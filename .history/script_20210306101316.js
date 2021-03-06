@@ -508,6 +508,3 @@ console.log(rest.get(time > rest.get('open') && time < rest.get('close')));
 console.log(rest.has('categories'));
 rest.delete(2);
 console.log(rest);
-console.log(rest.size);
-// rest.clear();
-console.log(rest);
