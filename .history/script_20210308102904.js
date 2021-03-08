@@ -538,4 +538,4 @@ for (const [key, value] of question) {
 
 // converting maps to an array
 
-console.log([...question]);
+console.log(...question);

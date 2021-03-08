@@ -529,13 +529,6 @@ console.log(question);
 // console.log(hoursMap);
 console.log(question.get('question'));
 for (const [key, value] of question) {
-  if (typeof key === 'number') console.log(`Answer ${key}: ${value}`);
+  if (typeof key === Number) console.log(`Answer ${key}: ${value}`);
 }
-// const answer = Number(prompt('your answer'));
-// console.log(answer);
-
-// console.log(question.get(question.get('correct') === answer));
-
-// converting maps to an array
-
-console.log([...question]);
+const answer = Number(prompt('your answer'));
