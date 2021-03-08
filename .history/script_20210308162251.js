@@ -676,54 +676,54 @@ GOOD LUCK
 // checkBaggage('Socks and camera');
 // checkBaggage('Got some snacks and gun for protection ');
 
-// console.log('a+very+nice+string'.split('+'));
-// console.log('Jonas Schmedtmann'.split(' '));
+console.log('a+very+nice+string'.split('+'));
+console.log('Jonas Schmedtmann'.split(' '));
 
-// const [firstName, lastName] = 'Jonas Schmedtmann'.split(' ');
+const [firstName, lastName] = 'Jonas Schmedtmann'.split(' ');
 
-// const newName = ['Mr.', firstName, lastName.toUpperCase()].join(' ');
-// console.log(newName);
+const newName = ['Mr.', firstName, lastName.toUpperCase()].join(' ');
+console.log(newName);
 
-// const capitalizeName = function (name) {
-//   const names = name.split(' ');
-//   const namesUpper = [];
+const capitalizeName = function (name) {
+  const names = name.split(' ');
+  const namesUpper = [];
 
-//   for (const n of names) {
-//     // namesUpper.push(n[0].toUpperCase() + n.slice(1));
-//     namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
-//   }
-//   console.log(namesUpper.join(' '));
-// };
+  for (const n of names) {
+    // namesUpper.push(n[0].toUpperCase() + n.slice(1));
+    namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
+  }
+  console.log(namesUpper.join(' '));
+};
 
-// capitalizeName('jessica ann smith devis');
-// capitalizeName('samuel kiroko njenga');
-// capitalizeName('joyce wanjiku kiroko');
+capitalizeName('jessica ann smith devis');
+capitalizeName('samuel kiroko njenga');
+capitalizeName('joyce wanjiku kiroko');
 
-// //  padding
-// const message = 'Go to gate 23!';
+//  padding
+const message = 'Go to gate 23!';
 
-// console.log(message.padStart(25, '+').padEnd(35, '+'));
+console.log(message.padStart(25, '+').padEnd(35, '+'));
 
-// const maskCreditCard = number => {
-//   const str = number + '';
-//   const last = str.slice(-4);
-//   return last.padStart(str.length, '*');
-// };
+const maskCreditCard = number => {
+  const str = number + '';
+  const last = str.slice(-4);
+  return last.padStart(str.length, '*');
+};
 
-// console.log(maskCreditCard(43378534324877987));
+console.log(maskCreditCard(43378534324877987));
 
-// console.log(maskCreditCard('43378534324877987'));
+console.log(maskCreditCard('43378534324877987'));
 
-// const message2 = 'Bad weather... All Departues Delayed...';
-// console.log(message2.repeat(5));
+const message2 = 'Bad weather... All Departues Delayed...';
+console.log(message2.repeat(5));
 
-// const planesInLine = n => {
-//   console.log(`There are ${n} places in line ${'🛩'.repeat(n)}`);
-// };
+const planesInLine = n => {
+  console.log(`There are ${n} places in line ${'🛩'.repeat(n)}`);
+};
 
-// planesInLine(5);
-// planesInLine(4);
-// planesInLine(7);
+planesInLine(5);
+planesInLine(4);
+planesInLine(7);
 
 /*Coding Challenge #4
 Write a program that receives a list of variable names written in underscore_case 
@@ -762,20 +762,4 @@ document.body.append(document.createElement('button'));
 
 document.querySelector('button').addEventListener('click', function () {
   const text = document.querySelector('textarea').value;
-  const rows = text.split('\n');
-  // console.log(rows);
-  for (const [i, row] of rows.entries()) {
-    const [first, second] = row.toLocaleLowerCase().trim().split('_');
-    const output = ` ${first}${second.replace(
-      second[0],
-      second[0].toLocaleUpperCase()
-    )}`;
-    console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
-  }
 });
-
-// underscore_case
-// first_name
-// Some_Variable
-// calculate_AGE
-// delayed_departure

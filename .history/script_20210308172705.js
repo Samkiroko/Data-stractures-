@@ -770,7 +770,7 @@ document.querySelector('button').addEventListener('click', function () {
       second[0],
       second[0].toLocaleUpperCase()
     )}`;
-    console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
+    console.log(`${output.padEnd(20)}${'✅'.repeat(1 + 1)}`);
   }
 });
 
