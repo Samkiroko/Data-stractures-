@@ -576,26 +576,5 @@ const gameEvents = new Map([
 // 1. Create an array 'events' of the different game events that happened (no
 // duplicates)
 
-// const events = new Set(gameEvents);
-// console.log(events);
-
-console.log(gameEvents.values());
-// const events = new Set(gameEvents.values());
-// console.log(events);
-// convert to an arrays
-const events = [...new Set(gameEvents.values())];
+const events = new Set(gameEvents);
 console.log(events);
-
-// no.2
-gameEvents.delete(64);
-
-// no.3
-const time = [...gameEvents.keys()].pop();
-console.log(time);
-console.log(`An event happened, on average, every ${time / gameEvents.size}`);
-
-// no.4
-for (const [min, event] of gameEvents) {
-  const half = min <= 45 ? 'FIRST' : 'SECOND';
-  console.log(`[${half} HALF] ${min}: ${event}`);
-}
