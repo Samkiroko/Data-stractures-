@@ -702,25 +702,4 @@ capitalizeName('joyce wanjiku kiroko');
 //  padding
 const message = 'Go to gate 23!';
 
-console.log(message.padStart(25, '+').padEnd(35, '+'));
-
-const maskCreditCard = number => {
-  const str = number + '';
-  const last = str.slice(-4);
-  return last.padStart(str.length, '*');
-};
-
-console.log(maskCreditCard(43378534324877987));
-
-console.log(maskCreditCard('43378534324877987'));
-
-const message2 = 'Bad weather... All Departues Delayed...';
-console.log(message2.repeat(5));
-
-const planesInLine = n => {
-  console.log(`There are ${n} places in line ${'🛩'.repeat(n)}`);
-};
-
-planesInLine(5);
-planesInLine(4);
-planesInLine(7);
+console.log(message.padStart(25, '+'));
