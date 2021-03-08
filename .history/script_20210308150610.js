@@ -658,20 +658,4 @@ console.log(announcement.replaceAll('door', 'gate'));
 
 // Booleans
 const plane1 = 'A320neo';
-console.log(plane1.includes('A320'));
-console.log(plane1.startsWith('A320'));
-console.log(plane1.endsWith('A320'));
-
-// practice exercise
-const checkBaggage = function (items) {
-  const baggage = items.toLocaleLowerCase();
-  if (baggage.includes('knife') || baggage.includes('gun')) {
-    console.log('You are not welcomed');
-  } else {
-    console.log('welcome aboard!');
-  }
-};
-
-checkBaggage('I have a laptop, some Food and a pocket Knife');
-checkBaggage('Socks and camera');
-checkBaggage('Got some snacks and gun for protection ');
+console.log(plane.includes('A320'));
